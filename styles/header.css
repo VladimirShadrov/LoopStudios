@@ -50,7 +50,8 @@
   margin-right: 0;
 }
 
-.menu__link {
+.menu__link,
+.menu__footer-menu-link {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
@@ -59,7 +60,8 @@
   position: relative;
 }
 
-.menu__link::before {
+.menu__link::before,
+.menu__footer-menu-link::before {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -71,7 +73,8 @@
   transition: 0.3s;
 }
 
-.menu__link:hover::before {
+.menu__link:hover::before,
+.menu__footer-menu-link:hover::before {
   transform: scale(1, 1);
 }
 
