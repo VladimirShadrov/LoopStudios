@@ -1,0 +1,224 @@
+@import './styles.css';
+
+.creations {
+  padding: 184px 0 184px 0;
+}
+
+.creations__title-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.creations__title {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.creations__link,
+.creations__link-bottom {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  padding-left: 38px;
+  padding-right: 43px;
+  display: block;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+
+.creations__link:hover,
+.creations__link-bottom:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.creations__link-bottom {
+  width: 157px;
+  margin: 0 auto;
+  padding-left: 39px;
+  padding-right: 30px;
+  display: none;
+}
+
+.creations__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.creations__item {
+  width: calc(25% - 30px);
+  min-height: 450px;
+  margin: 0 15px 30px 15px;
+  position: relative;
+}
+
+.creations__item-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  position: relative;
+}
+
+.creations__item-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.creations__item-link:hover::before {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.creations__item-link:hover ~ h3 {
+  color: #000;
+}
+
+.creations__item-title {
+  position: absolute;
+  left: 40px;
+  bottom: 32px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 60%;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.creations__item:first-child {
+  background: url('../images/deep-earth.png') center / cover no-repeat;
+}
+
+.creations__item:nth-child(2) {
+  background: url('../images/night-arcade.png') center / cover no-repeat;
+}
+
+.creations__item:nth-child(3) {
+  background: url('../images/soccer-team.png') center / cover no-repeat;
+}
+
+.creations__item:nth-child(4) {
+  background: url('../images/grid.png') center / cover no-repeat;
+}
+
+.creations__item:nth-child(5) {
+  background: url('../images/from-up.png') center / cover no-repeat;
+}
+
+.creations__item:nth-child(6) {
+  background: url('../images/pocket.png') center / cover no-repeat;
+}
+
+.creations__item:nth-child(7) {
+  background: url('../images/curiosity.png') center / cover no-repeat;
+}
+
+.creations__item:last-child {
+  background: url('../images/fisheye.png') center / cover no-repeat;
+}
+
+@media (max-width: 1070px) {
+  .creations__item {
+    width: calc(33.33% - 30px);
+  }
+}
+
+@media (max-width: 950px) {
+  .creations {
+    padding: 96px 0 96px 0;
+  }
+
+  .creations__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 650px) {
+  .creations__item {
+    width: calc(100%);
+    min-height: 120px;
+  }
+
+  .creations__link {
+    display: none;
+  }
+
+  .creations__item-title {
+    left: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    width: 40%;
+  }
+
+  .creations__link-bottom {
+    display: block;
+  }
+
+  .creations__title-container {
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+
+  .creations__title {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .creations__title-container {
+    margin-bottom: 48px;
+  }
+
+  .creations__item:first-child {
+    background: url('../images/deep-earth-a.png') center / cover no-repeat;
+  }
+
+  .creations__item:nth-child(2) {
+    background: url('../images/night-arcade-a.png') center / cover no-repeat;
+  }
+
+  .creations__item:nth-child(3) {
+    background: url('../images/soccer-team-a.png') center / cover no-repeat;
+  }
+
+  .creations__item:nth-child(4) {
+    background: url('../images/grid-a.png') center / cover no-repeat;
+  }
+
+  .creations__item:nth-child(5) {
+    background: url('../images/from-up-a.png') center / cover no-repeat;
+  }
+
+  .creations__item:nth-child(6) {
+    background: url('../images/pocket-a.png') center / cover no-repeat;
+  }
+
+  .creations__item:nth-child(7) {
+    background: url('../images/curiosity-a.png') center / cover no-repeat;
+  }
+
+  .creations__item:last-child {
+    background: url('../images/fisheye-a.png') center / cover no-repeat;
+  }
+}

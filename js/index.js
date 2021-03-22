@@ -7,7 +7,10 @@ header.addEventListener('click', function (event) {
   event.preventDefault();
 
   if (event.target.classList.contains('menu__burger-link')) {
-    sideMenu.classList.remove('to-right');
+    sideMenu.style.display = 'block';
+    setTimeout(() => {
+      sideMenu.classList.remove('to-right');
+    }, 50);
   }
 
   if (
@@ -15,5 +18,9 @@ header.addEventListener('click', function (event) {
     event.target.classList.contains('menu__side-menu-link')
   ) {
     sideMenu.classList.add('to-right');
+
+    setTimeout(() => {
+      sideMenu.style.display = 'none';
+    }, 500);
   }
 });
