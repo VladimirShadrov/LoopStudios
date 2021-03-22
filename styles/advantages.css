@@ -1,0 +1,81 @@
+@import './styles.css';
+
+.advantages {
+  padding-top: 160px;
+}
+
+.advantages__container {
+  position: relative;
+}
+
+.advantages__picture {
+  width: 65.8%;
+}
+
+.advantages__image {
+  width: 100%;
+}
+
+.advantages__description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 183px;
+  width: 48.7%;
+  background-color: #fff;
+  padding: 96px 0 0 96px;
+}
+
+.advantages__title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.advantages__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+@media (max-width: 1050px) {
+  .advantages {
+    padding-top: 96px;
+  }
+
+  .advantages__description {
+    position: relative;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    padding-top: 48px;
+    padding-left: 0;
+  }
+
+  .advantages__picture,
+  .advantages__description {
+    width: 100%;
+  }
+
+  .advantages__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__title {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .advantages__text {
+    text-align: center;
+  }
+}
