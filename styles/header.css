@@ -1,0 +1,137 @@
+@import './styles.css';
+
+.header {
+  min-height: 650px;
+  width: 100%;
+  background: url('../images/header-bg.svg') center / cover no-repeat;
+}
+
+.header__top-container {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.logo-main {
+  width: 192px;
+  height: 32px;
+}
+
+.logo__link {
+  display: inline-block;
+}
+
+.logo__link,
+.logo__image {
+  width: 100%;
+  height: 100%;
+}
+
+.logo__image {
+  pointer-events: none;
+}
+
+.menu__list,
+.menu__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.menu__item {
+  margin-right: 32px;
+  list-style: none;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu__link::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: calc(50% - 12px);
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transform: scale(0, 1);
+  transition: 0.3s;
+}
+
+.menu__link:hover::before {
+  transform: scale(1, 1);
+}
+
+.menu__burger {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.menu__burger-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.menu__burger-link::before,
+.menu__burger-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.menu__burger-link::before {
+  top: 2px;
+  left: 0;
+}
+
+.menu__burger-link::after {
+  bottom: 2px;
+  left: 0;
+}
+
+.menu__burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: calc(50% - 1px);
+  pointer-events: none;
+}
+
+.menu__side-container {
+  position: absolute;
+}
+
+.header__title-container {
+  padding: 40px;
+  border: 2px solid #fff;
+  max-width: 650px;
+}
+
+.header__title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 72px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+}
