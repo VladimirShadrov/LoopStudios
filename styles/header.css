@@ -121,12 +121,12 @@
 }
 
 .menu__side-container {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: -24px;
+  right: 0;
   padding: 40px 24px;
   background-color: #000;
-  width: 375px;
+  width: 100%;
   height: 100vh;
   transition: 0.3s;
   display: none;
